@@ -1,18 +1,38 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple login and register chat application using MongoDB. It is aimed to show the integration of node js backend and react frontend. 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Library used - SERVER
+> npm i express mongoose nodemon socket.io bcrypt cors dotenv
+### `express`
+Back end web application framework for Node.js, de facto standard server framework for Node.js
 
-### `npm start`
+### `cors`
+a system, consisting of transmitting HTTP headers, that determines whether browsers block frontend JavaScript code from accessing responses for cross-origin request
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `mongoose`
+a JavaScript object-oriented programming library that creates a connection between MongoDB and the Express web application framework
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+
+## Library used - Frontend
+> yarn add axios styled-components react-router-dom react-toastify
+
+### `axios`
+promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data
+
+### `styled-components`
+popular library that is used to style React applications. It allows you to build custom components by writing actual CSS in your JavaScript.
+
+### `react-router-dom`
+enables you to implement dynamic routing in a web app
+
+### `react-toastify`
+beautify toast message components
+
+
+## How to start server
+after setting server 
 
 ### `npm test`
 
