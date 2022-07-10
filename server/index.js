@@ -1,3 +1,5 @@
+// npm i express mongoose nodemon socket.io bcrypt cors dotenv
+
  const express = require("express") //back end web application framework for Node.js, de facto standard server framework for Node.js
  const cors = require("cors") // a system, consisting of transmitting HTTP headers, that determines whether browsers block frontend JavaScript code from accessing responses for cross-origin request
  const mongoose = require("mongoose") // a JavaScript object-oriented programming library that creates a connection between MongoDB and the Express web application framework
