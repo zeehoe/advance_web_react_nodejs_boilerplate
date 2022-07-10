@@ -42,14 +42,17 @@ beautify toast message components
 ## How to start server
 after setting up mongoose db ( https://www.w3schools.com/nodejs/nodejs_mongodb.asp ), go to server directory, install the library using the command 
 > npm i express mongoose nodemon socket.io bcrypt cors dotenv
+
 run
 > npm start
 
 ## How to start frontend page
 after using command
 > create-react-app public
+
 heads into the public directory and run command
 > yarn add axios styled-components react-router-dom react-toastify
+
 then run
 > yarn start
 
