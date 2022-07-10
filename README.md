@@ -1,8 +1,12 @@
-# Advance Login Register server and frontend setup (Node js and React)
+# Advance web page setup using Node js and React
 
-This project is a advance basic setup, consiting of login and register page web application using MongoDB. 
+This project is a advance setup for a web application using React as frontend, and Node.js as backend. This project 3 pages (Login, Register and Main page), while the backend have only one model which is User model. The data management system is using MongoDB, for simple demonstration. This project consist of 2 part:
 
-It is aimed to show the integration of node js backend and react frontend.
+### public
+React frontend sources codes are here.
+
+### server
+Node.js backend producing api for frontend to use.
 
 
 ## Library used - SERVER
