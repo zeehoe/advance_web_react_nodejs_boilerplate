@@ -20,7 +20,7 @@ module.exports.register = async (req,res,next) => {
             username,
             password:hashedPassword
         })
-        delete user.password
+        user.password = undefined // remove this property before sending back to frontend
         return res.json({msg:"successful",status:true,user})
     }catch (ex){
         next(ex)
@@ -30,17 +30,19 @@ module.exports.register = async (req,res,next) => {
 module.exports.login = async (req,res,next) => {
     try{
         const { username, password } = req.body
-        const checkUser = await UserModel.findOne({username})
+        // the variable name here is what will be show in the json file
+        const user = await UserModel.findOne({username})
         
-        if (!checkUser){
+        if (!user){
             return res.json({msg:"Incorrect username or password",status:false})
         }
-        const isPassValid = await bcrypt.compare(password,checkUser.password)
+        const isPassValid = await bcrypt.compare(password,user.password)
         if (!isPassValid){
             return res.json({msg:"Incorrect username or password",status:false})
         }
-        delete checkUser.password
-        return res.json({msg:"successful",status:true,checkUser})
+        user.password = undefined // remove this property before sending back to frontend
+        console.log(user)
+        return res.json({msg:"successful",status:true,user})
     }catch (ex){
         next(ex)
     }
