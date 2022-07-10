@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Advance Login Register server and frontend setup (Node js and React)
 
 This project is a advance basic setup, consiting of login and register page web application using MongoDB. 
 
@@ -55,3 +55,4 @@ then run
 
 
 #### credits to
+> https://www.youtube.com/watch?v=otaQKODEUFs&t=471s
