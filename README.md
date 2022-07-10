@@ -23,7 +23,7 @@ auto run script again after codes change
 JavaScript implementation of the bcrypt password hashing function that allows you to easily create a hash out of a password string
 
 
-## Mandatory Library used - Frontend
+## Library used - Frontend
 > yarn add axios styled-components react-router-dom react-toastify
 
 ### `axios`
