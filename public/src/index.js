@@ -1,4 +1,4 @@
-// yarn add axios styled-components react-router-dom
+// yarn add axios styled-components react-router-dom react-toastify
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';

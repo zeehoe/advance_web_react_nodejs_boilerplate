@@ -5,7 +5,7 @@ import Logo from "../assets/chat.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import { REGISTER_ROUTE } from "../utils/APIRoutes";
+import { RouteRegister } from "../utils/APIRoutes";
 
 function Register() {
   const navigate = useNavigate();
@@ -26,7 +26,8 @@ function Register() {
   
   useEffect(()=>{
     if (localStorage.getItem('chat-app-user')){
-      navigate('/')
+      console.log("you have logined before~")
+      // navigate('/')
     }
   },[])
 
@@ -34,7 +35,7 @@ function Register() {
     event.preventDefault();
     if (handleValidation()) {
       const { password, username, email } = values;
-      const { data } = await axios.post(REGISTER_ROUTE, {
+      const { data } = await axios.post(RouteRegister, {
         username,
         email,
         password,
