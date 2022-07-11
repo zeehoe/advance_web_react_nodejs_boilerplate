@@ -42,6 +42,9 @@ enables you to implement dynamic routing in a web app
 ### `react-toastify`
 beautify toast message components
 
+## Sample demo image
+![demo_image1](image1.png?raw=true "Demo Image 1")
+![demo_image2](image2.png?raw=true "Demo Image 2")
 
 ## How to start server
 after setting up mongoose db ( https://www.w3schools.com/nodejs/nodejs_mongodb.asp ), go to server directory, install the library using the command 
